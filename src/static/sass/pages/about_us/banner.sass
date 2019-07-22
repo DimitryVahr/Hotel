@@ -1,0 +1,72 @@
+.conteiner-banner
+    display: flex
+    width: 100%
+    min-height: 628px
+    justify-content: space-around
+    >p 
+        width: 513px
+        max-height: 100px 
+        transform: translateY(236px)    
+        @extend %banner
+form.callback-banner
+    width: 268px
+    height: 280px 
+    transform: translateY(87px)
+    padding-top: 16px
+    background: #C8B58F
+    input
+        padding-left: 9px
+        width: 191px
+        margin:
+            right: 34px 
+            left: 34px
+            bottom: 14px
+        height: 30px
+    .input-phone
+        margin-top: 16px   
+    label
+        display: none 
+    .callback-form__title
+        margin:
+            left: 47px
+        @extend %callback-form-header
+    span
+        margin-left: 34px
+        @extend %callback-form-description
+    >p
+        width: 200px
+        margin:
+            left: 34px
+            top: 14px
+            bottom: 20px
+        text-align: center
+        @extend %callback-form-description
+    .callback-form__submit
+        width: 200px
+        height: 46px
+        padding: 10px 20px
+        background: linear-gradient(180deg, #FFD600 0%, rgba(249, 226, 103, 0.679036) 29.42%, rgba(255, 255, 255, 0) 65.22%), #FDB600
+        border-radius: 10px
+        cursor: pointer
+        margin-left: 34px
+        @extend %callback-form-link
+        &:active
+            background: linear-gradient(180deg, #E5C61F 0%, rgba(234, 211, 88, 0.679036) 24.2%, rgba(236, 198, 153, 0.38575) 46.14%, rgba(255, 255, 255, 0) 75%), #EA8D21
+            border-radius: 10px
+    
+@media (max-width: 1200px)
+    .callback-form
+        form
+            transform: translateY(67px)
+        >p
+            width: 400px
+            transform: translateY(290px)    
+            font-size: 24px
+    
+@media (max-width: 900px)
+    .conteiner-banner>p
+        font-size: 30px
+
+@media (min-width: 900px)
+    .conteiner-banner>p
+        font-size: 43px

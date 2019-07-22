@@ -1,0 +1,28 @@
+include ../mixins
+doctype html
+html(lang="ru-RU")
+    head
+        title Номера отеля
+        meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
+        link(rel="stylesheet", href="static/css/css-reset.css")
+        link(rel="stylesheet", href="static/css/main.css")
+    body
+        include sprite_hotel-rooms.svg
+        .wrapper
+            h1 Номера отеля
+            .container-header
+                include common/header.pug
+                include common/nav.pug   
+            include hotel_rooms/comfort_room.pug
+            include hotel_rooms/family_room.pug
+            include hotel_rooms/lux_room.pug
+            include hotel_rooms/triple_room.pug
+            include hotel_rooms/double_room.pug      
+            include common/footer.pug
+        include hotel_rooms/modal.pug
+        include hotel_rooms/modal_description.pug
+        #overlay
+        script(src="static/js/libs.min.js")
+        script(src="static/js/main.js")
+        
+    

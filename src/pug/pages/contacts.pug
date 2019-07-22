@@ -1,0 +1,23 @@
+include ../mixins
+doctype html
+html(lang="ru-RU")
+    head
+        title Контакты
+        meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
+        link(rel="stylesheet", href="static/css/css-reset.css")
+        link(rel="stylesheet", href="static/css/main.css")
+    body
+        include sprite_contacts.svg
+        .wrapper
+            h1 Контакты
+            .container-header
+                include common/header.pug
+                include common/nav.pug
+            section(class="container-contacts")
+                h2 Контакты отеля
+                include contacts/container_contacts.pug
+                include contacts/map.pug
+            include common/footer.pug
+        script(src="https://vk.com/js/api/openapi.js?159")
+        script(src="static/js/libs.min.js")
+        script(src="static/js/main.js")

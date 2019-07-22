@@ -1,0 +1,47 @@
+.container-information-hotel
+    display: flex
+    width: 93%
+    margin: auto
+    align-self: center
+    justify-content: space-around
+    h2
+        display: none
+.rules
+    width: 550px
+    background: #FFFFFF
+    border: 5px solid #57C0CE
+    box-sizing: border-box
+    border-radius: 50px
+    &__titel
+        margin: 
+            top: 15px
+            bottom: 20px
+        @extend %headers
+    p
+        margin: 
+            left: 25px
+            right: 15px
+            bottom: 18px
+        @extend %rules-text
+        &:last-child
+            margin-bottom: 30px
+    >span
+        margin-left: 25px
+        @extend %rules-text
+    ul
+        margin: 8px 15px 18px 60px
+        li
+            display: flex
+            @extend %rules-text
+            &:before
+                content: url(../img/common/ellipse.png)
+                margin-right: 12px
+            >span
+                margin-left: 13px
+
+@media (max-width: 1250px)
+    .container-information-hotel
+        flex-direction: column
+        align-items: center
+        .rules
+            margin-bottom: 120px

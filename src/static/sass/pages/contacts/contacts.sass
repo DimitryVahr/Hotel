@@ -1,0 +1,80 @@
+.container-contacts
+    margin: auto
+    width: 100%
+    min-height: 540px
+    display: flex
+    justify-content: space-between
+    h2
+        display: none
+.map-contacts
+    margin-top: 50px
+    iframe
+        height: 405px
+        frameborder: 0
+        border: 0
+
+.information-contacts > p
+    margin-top: 30px
+    margin-bottom: 30px
+    @extend %contacts-information 
+.address
+    margin-top: 50px
+    display: flex
+    >p
+        display: flex
+        align-self: center
+        line-height: 1.5
+        @extend %contacts-address
+    img
+        width: 29px
+        height: 41px
+        margin-right: 25px
+    
+.widget
+    display: flex
+    ul
+        margin-left: 30px
+        li
+            @extend %contacts-widget
+            display: flex
+            align-items: center
+            img
+                margin-right: 23px
+            &:first-child
+                margin-bottom: 33px
+
+.contacts_icon
+    width: 29px
+    height: 41px
+    margin-right: 25px
+.phone_contacts
+    width: 29px
+    height: 31px
+    margin-right: 23px
+.mail_contacts
+    width: 29px
+    height: 23px
+    margin-right: 23px
+                    
+@media (max-width: 1280px)
+    .container-contacts
+        flex-direction: column
+    .map-contacts
+        iframe 
+            width: 100%
+    .information-contacts
+        width: 90%
+        margin: auto
+    .address
+        >p
+                    
+
+@media (min-width: 1280px)
+    .map-contacts
+        margin-top: 50px
+        margin-right: 90px
+        iframe
+            width: 430px
+    .information-contacts
+        width: 672px
+        margin-left: 108px

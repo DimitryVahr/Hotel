@@ -1,0 +1,86 @@
+.wrapper
+    width: 100%
+    max-width: 1600px
+    margin: auto
+    >h1
+        display: none
+
+.container-header
+    background-image: url(../img/common/header/banner.png)
+    background-size: cover
+
+header
+    display: flex
+    min-height: 91px
+    padding: 
+        left: 90px
+        right: 90px
+        top: 20px
+    flex-wrap: wrap
+    justify-content: space-between
+    background: rgba(244, 238, 222, 0.69)
+.header-logo__link
+    max-width: 220px
+    height: 70px
+.header-logo
+    width: 100%
+    height: 100%
+    fill: #4C3F35
+
+.header-contacts
+    text-align: right
+    @extend %contacts
+
+.header-address
+    display: block
+    white-space: nowrap
+    
+.header-phone
+    margin-top: 9px
+    color: black
+    text-decoration: underline
+    &:hover
+        color: #752121
+
+.anchor
+    display: block
+    position: relative
+    visibility: hidden
+    top: -120px
+
+#landmarks
+    top: -120px
+#advantages
+    top: -60px
+#hotel-description
+    top: -160px
+#rules
+    top: -120px
+#questions
+    top: -120px
+#map
+    top: -60px
+
+@media (max-width: 900px)
+    .header-logo__link
+        max-width: 200px
+        height: 50px
+
+
+@media (max-width: 800px)
+    header
+        flex-direction: column
+        padding: 0
+    .header-logo__link
+        margin: 
+            left: auto
+            right: auto
+    .header-contacts
+        text-align: center
+        margin: 
+            left: auto
+            right: auto
+            bottom: 15px
+
+
+

@@ -1,0 +1,32 @@
+#modal--description
+    display: none
+    width: 310px
+    height: 354px
+    position: fixed
+    top: 50%
+    left: 50%
+    margin: -210px 0 0 -170px
+    background: #EEEAD8
+    border: 5px solid #B4A381
+    opacity: 0
+    z-index: 20
+    >p
+        margin: 
+            left: 43px
+            right: 43px
+        text-align: center
+        @extend %callback-form-description
+        font-size: 20px
+        margin-top: 28px
+        margin-bottom: 28px
+    .modal_icon-smile
+        width: 67px
+        height: 67px
+        margin-left: 40%
+    >a
+        cursor: pointer
+        margin-left: 73px
+        @extend %callback-form-description
+        font-size: 20px
+        text-decoration-line: underline
+        color: #7E7777

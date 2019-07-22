@@ -1,0 +1,167 @@
+.comfort-room, .family-room, .lux-room, .double-room, .triple-room
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    height: auto
+    width: auto
+    margin:
+        top: 120px
+        bottom: 60px
+    >h2
+        display: none
+.slider-hotel
+    width: 480px  
+    height: 440px
+    margin-top: 7px
+    background: #EBEBEB
+.slider-comfort-room,.slider-family-room,.slider-lux-room,.slider-double-room,.slider-triple-room
+    width: 100%
+    height: 319px
+    .slider-room-item
+        img
+            width: 100%
+            height: 319px
+.slider-comfort-nav,.slider-family-nav,.slider-lux-nav,.slider-double-nav,.slider-triple-nav
+    width: 98%
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin: auto
+    margin-top: 22px
+    .slider-nav-item
+        img
+            margin: auto
+            width: 115px
+            height: 77px   
+.room_arrow-left, .room_arrow-right
+    max-width: 20px
+    min-width: 20px 
+    height: 32px
+    margin-left: 10px
+    margin-right: 10px
+.room-description
+    .room-description__title
+        display: block
+        text-align: center
+        @extend %rooms-head
+    .capacity
+        margin: 
+            top: 10px
+        @extend %rooms-capacity
+    .add-inform
+        display: block
+        text-align: center
+        @extend %rooms-services-head
+    span
+        @extend %rooms-services-head
+    .services
+        li
+            display: flex
+            margin-top: 10px
+            @extend %rooms-services
+            &:before
+                content: url(../img/hotel_rooms/comfort/ellipse.png)
+                margin-right: 9px
+
+.room-reservation__price
+    display: block
+    height: 44px
+    width: 100%
+    padding-top: 14px
+    margin-bottom: 35px
+    background: #B4E0E5
+    @extend %rooms-reservation-price
+.room-reservation__btn
+    width: auto
+    height: 36px
+    padding: 
+        top: 10px
+        left: 21px
+        right: 20px
+        bottom: 10px         
+    background: linear-gradient(180deg, #FFD600 0%, rgba(249, 226, 103, 0.679036) 29.42%, rgba(255, 255, 255, 0) 65.22%), #FDB600
+    border-radius: 10px
+    @extend %rooms-reservation-booking
+    &:active
+        background: linear-gradient(180deg, #E5C61F 0%, rgba(234, 211, 88, 0.679036) 24.2%, rgba(236, 198, 153, 0.38575) 46.14%, rgba(255, 255, 255, 0) 75%), #EA8D21
+        border-radius: 10px
+.room-reservation__description
+    margin-top: 35px
+    margin-left: 15px
+    @extend %rooms-reservation-description
+.comfort-room
+    margin-top: 60px
+.double-room
+    margin-bottom: 60px
+
+@media (max-width: 910px)
+    .comfort-room, .family-room, .lux-room, .double-room, .triple-room
+        flex-direction: column
+        align-items: center
+    .room-description
+        order: -1
+        width: 80%
+        h3, .capacity
+            text-align: center
+            margin-bottom: 10px
+        .capacity
+            margin-bottom: 15px
+        span, .add-inform
+            font-size: 22px
+        .add-inform
+            display: flex
+            justify-content: center
+        .services
+            margin-bottom: 20px
+            li
+                font-size: 20px
+    .room-reservation
+        text-align: center
+        width: 400px
+        margin-top: 25px
+        .description-reservation
+            margin-left: 20px
+            font-size: 18px
+
+@media (max-width: 1058px) and (min-width: 910px)
+    .room-reservation
+        width: 840px
+        margin-top: 50px
+        display: flex
+        justify-content: flex-start
+    .description-reservation
+        font-size: 18px
+        margin-top: 20px
+        margin-left: 50px
+        width: 460px
+    .room-description
+        h3
+            text-align: center
+        span, .add-inform
+                font-size: 20px
+    .services
+        li
+            font-size: 19px
+    .button_price
+        width: 300px
+        text-align: center
+
+
+@media (min-width: 910px)
+    .room-description
+        width: 360px
+    .add-inform
+        text-align: center
+    .capacity
+        margin-bottom: 10px
+
+@media (min-width: 1058px)
+    .room-reservation
+        width: 200px
+        margin-top: 7px
+    .description-reservation
+        margin-left: 20px
+        font-size: 16px
+    .services
+        li
+            font-size: 18px

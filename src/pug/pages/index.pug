@@ -1,0 +1,36 @@
+include ../mixins
+doctype html
+html(lang="ru-RU")
+    head
+        title Отель 8-Сов
+        meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
+        link(rel="stylesheet", href="static/css/css-reset.css")
+        link(rel="stylesheet", href="static/css/main.css")    
+    body
+        include sprite-index.svg
+        .wrapper
+            h1 Отель 8-Сов
+            .container-header
+                include common/header.pug
+                include common/nav.pug
+                include about_us/banner.pug
+            include about_us/advantages.pug
+            include about_us/hotel_description.pug
+            article(class="container-information-hotel")
+                h2 Правила и вопросы
+                include about_us/rules.pug
+                include about_us/questions.pug
+            include about_us/landmarks.pug
+            include about_us/map.pug
+            include common/footer.pug
+        include hotel_rooms/modal_description.pug
+        #overlay
+        script(src="static/js/libs.min.js")
+        script(src="static/js/main.js")    
+        
+        
+
+            
+        
+        
+        

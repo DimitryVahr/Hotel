@@ -1,0 +1,51 @@
+.container-questions
+    width: 550px
+    height: 350px
+    background: #ffffff
+    border: 5px solid #F1D6B7
+    box-sizing: border-box
+    border-radius: 50px
+    h3
+        margin: 
+            top: 15px
+            bottom: 25px
+        @extend %headers
+.slider-questions, .slider-item-question *
+    box-sizing: border-box
+.slider-questions
+    position: relative
+    display: flex
+    width: 360px
+    height: 257px
+    margin: auto      
+.slider-item-question
+    min-width: 360px
+    height: 250px
+    &:first-child > p.answer-text
+        text-align: left
+    ul
+        li
+            margin-left: 15px
+            @extend %answer
+            &:before
+                content: url(../img/common/ellipse.png)
+                margin-right: 7px
+p.question-text
+    margin-bottom: 32px
+    @extend %question
+p.answer-text
+    text-align: center
+    margin-left: 15px
+    @extend %answer
+.questions_arrow-left
+    width: 33px
+    height: 33px
+    position: absolute
+    left: -53px
+    top: 80px
+.questions_arrow-right
+    width: 33px
+    height: 33px
+    position: absolute
+    right: -53px
+    top: 80px
